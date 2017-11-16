@@ -52,8 +52,6 @@ public class BoundsBehaviourBase : MonoBehaviour
 
     /// <summary>
     /// 初期化時に呼び出されます。
-    /// キャッシュのために通常の MonoBehaviour よりパフォーマンスが悪い点に注意します。
-    /// 継承クラスでは override して base.Awake を呼ぶ必要があります。
     /// </summary>
     protected virtual void Awake()
     {
