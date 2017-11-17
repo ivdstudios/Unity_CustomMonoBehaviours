@@ -3,7 +3,7 @@
 /// <summary>
 /// Transform と Renderer がキャッシュされた MonoBehaivour 。
 /// </summary>
-public class CacheBehaviourTransformRenderer : CacheBehaviourTransform
+public class CacheMonoBehaviourTransformRenderer : CacheMonoBehaviourTransform
 {
     #region Field
 

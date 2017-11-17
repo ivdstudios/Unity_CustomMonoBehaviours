@@ -5,7 +5,7 @@
 /// </summary>
 [RequireComponent(typeof(Camera))]
 [ExecuteInEditMode]
-public class BoundsCaptureCamera : CacheBehaviourTransform
+public class BoundsCaptureCamera : CacheMonoBehaviourTransform
 {
     #region Field
 

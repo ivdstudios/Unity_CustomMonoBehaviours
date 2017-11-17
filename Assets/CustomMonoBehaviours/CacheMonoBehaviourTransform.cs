@@ -1,18 +1,17 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// Camera がキャッシュされた MonoBehaivour 。
+/// Transform がキャッシュされた MonoBehaivour 。
 /// </summary>
-[RequireComponent(typeof(Camera))]
-public class CacheBehaviourCamera : MonoBehaviour
+public class CacheMonoBehaviourTransform : MonoBehaviour
 {
     #region Field
 
     /// <summary>
-    /// キャッシュされた Camera 。
+    /// キャッシュされた Transform 。
     /// </summary>
     [HideInInspector]
-    public new Camera camera;
+    public new Transform transform;
 
     #endregion Field
 
@@ -23,7 +22,7 @@ public class CacheBehaviourCamera : MonoBehaviour
     /// </summary>
     protected virtual void Awake()
     {
-        this.camera = base.GetComponent<Camera>();
+        this.transform = base.transform;
     }
 
     #endregion Method
